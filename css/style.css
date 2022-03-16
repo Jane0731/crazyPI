@@ -13,28 +13,7 @@
 	font-family: "Titillium Web", sans-serif;
 }
 
- .a{
-	position:relative;
-	width:0;
-	height:0;
-	border-width:0 81px 59px;
-	border-style:solid;
 
-	border-color:transparent transparent #069;
-}
-.a:before{
-	position:absolute;
-	content:"";
-	top:59px;
-	left: -80px;
-    width: 160px;
-
-	height:0;
-	background:none;
-	border-width:95px 31px 0;
-	border-style:solid;    
-	border-color:#069 transparent transparent;
-  }
 .font-thin {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 200;
@@ -118,7 +97,7 @@ body {
 }
 
 #slide-1 h1 {
-	padding-top: 20vh;
+	padding-top: 16vh;
 	font-size: 9vh;
 }
 #slide-1 h2 {
