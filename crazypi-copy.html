@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2022-03-16 16:20:22
- * @LastEditTime: 2022-03-16 18:23:31
+ * @LastEditTime: 2022-03-16 18:22:11
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \Raspberry\crazypi.html
@@ -39,27 +39,65 @@
 </head>
 <body>
 		<!-- === MAIN Background === -->
-        <div class="container " style="background-color:#ffffff">
-            <div class="row">
-              <div class="col">
-                1 of 2
+        <div class="slide story" id="slide-1" data-slide="1">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                2 of 2
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                1 of 3
-              </div>
-              <div class="col">
-                2 of 3
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-          </div>
+            <div class="container ">
+                <!-- <div class="row">
+                    <h1>及時溫度</h1>
+                </div> -->
+                <div id="home-row-1 " class=" row clearfix" >
+                
+                    <div class="col-6" >
+                        <div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div>
+                        <h1 class="font-semibold">現在溫度</h1>
+                    </div>
+                    
+                    <div class="col-6">
+                        <div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div>
+                        <h1 class="font-semibold">現在濕度</h1>
+                    </div>
+                        
+                    </div><!-- /col-12 -->
+              
+                <div id="home-row-2" >
+                	<div class="col-12 col-sm-6 bg-info">
+                       111 <!-- <canvas  id="myChart" ></canvas> -->
+                    </div>
+                    <br>
+                   
+                    <div class="col-12 col-sm-6">
+                        <!-- <canvas  id="myChart1" ></canvas> -->
+                    </div>
+
+                </div><!-- /row -->
+                <br>
+                <div id="home-row-2">
+                	<div class="col-12 col-sm-6">
+                        <!-- <canvas  id="myChart2" ></canvas> -->
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-12 col-sm-6 p-2">
+                        <!-- <canvas id="myChart3" ></canvas> -->
+                    </div>
+                    <br>
+                    <br>
+            
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /slide1 -->
 
 	<!-- SCRIPTS -->
 
