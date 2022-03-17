@@ -9,10 +9,9 @@ class htResource(ModelResource):
         resource_name = 'ht'
         fields = ['temperature', 'humidity']
         authorization = Authorization()
-        
-   
-    def get_object_list(self, request):
-        return super(htResource,self).get_object_list(request).filter()
-
+    
+    def aa(self, bundle):
+        qs =  temperature_humidity.objects.raw('SELECT * FROM ht_temperature_humidity')
+        return [row for row in qs]
 
 ht_resource = htResource()  #建立API資源
