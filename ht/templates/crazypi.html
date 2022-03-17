@@ -74,7 +74,7 @@
             label: "My First dataset",
             backgroundColor: "rgb(255, 99, 132)",
             borderColor: "rgb(255, 99, 132)",
-            data: [{{last_one.temperature}}, {{last_one.temperature}}, {{last_one.temperature}}, {{last_one.temperature}}, {{last_one.temperature}}, {{last_one.temperature}}],
+            data: [{{last_six.temperature}}, {{last_five.temperature}}, {{last_four.temperature}}, {{last_three.temperature}}, {{last_two.temperature}}, {{last_one.temperature}}],
           },
         ],
       };
@@ -109,7 +109,7 @@
       const myChart3 = new Chart(document.getElementById("myChart3"), config);
     </script>
     <script>
-      setTimeout('location.reload()', 1000)
+      setTimeout('location.reload()', 500)
     </script>
   </body>
 </html>

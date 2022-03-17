@@ -21,7 +21,7 @@ from ht import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #api
-    path('api/', include(ht_resource.urls)),
+    path('api/', include(ht_resource.urls), name='api'),
     # 頁面
     path('', views.home, name='home'),
 ]
