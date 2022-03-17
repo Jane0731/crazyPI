@@ -13,10 +13,10 @@ while True:
     humidity, temperature = Adafruit_DHT.read_retry(11,4)
     if humidity is not None and temperature is not None:
         print("Temp={0:0.1f}*C  Humidity={1:0.1f}%".format(temperature, humidity))
-        payload = {'Temperature' : temperature , 'humidity' : humidity}
+        payload = {'Temperature' : temperature , 'Humidity' : humidity}
         print (json.dumps(payload))
         #要發布的主題和內容
         client.publish("Try/MQTT/Temperature_humidity", json.dumps(payload))
-        time.sleep(5)
+        time.sleep(2)
     else:
         print("Failed to retrieve data from HDT22 sensor")
