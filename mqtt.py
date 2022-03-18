@@ -17,7 +17,7 @@ def on_message(client, userdata, msg):
                                       database="d1j1m9fni09apj")  # 要連結的資料庫
         print("Success Connect")
         cursor = connection.cursor()
-        postgreSQL_insert_Query = 'INSERT INTO ht_temperature_humidity(temperature,humidity) VALUES ({0},{1})'.format(payload['Temperature'],payload['Humidity'])
+        postgreSQL_insert_Query = 'INSERT INTO ht_temperature_humidity(temperature,humidity,create_date) VALUES ({0},{1},\'{2}\')'.format(payload['Temperature'],payload['Humidity'],payload['Time'])
         cursor.execute(postgreSQL_insert_Query)
         connection.commit()
         print("Success Save Data")
