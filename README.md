@@ -2,7 +2,18 @@
 ## Web Folder
 
 ## Mqtt Folder
-
+### 負責功能?
+- 與MQTT Server做連線
+- 與PostgreSQL連線
+- 訂閱主題，並且將溫溼度感測器的數據存進資料庫   
+### 如何執行?
+1. 本地端安裝mosquitto，可參考此篇文章[認識 MQTT 與安裝 Mosquitto Windows 版本](https://jimirobot.tw/esp32-mosquitto-windows-mqtt-tutorial/)
+2. 啟動MQTT Server，可參考此篇文章[Mosquitto conf 設定與 MQTT 測試](https://jimirobot.tw/esp32-mosquitto-conf-mqtt-tutorial/)
+3. 切換路徑至Mqtt Folder，隨後執行mqtt.py檔
+```bash=
+cd Mqtt
+Python mqtt.py
+```
 ## RaspberryPi Folder
 ### 負責功能?
 - 與MQTT Server做連線
