@@ -80,7 +80,7 @@ body {
 }
 
 #slide-1 h1 {
-	padding-top: 9.5vh;
+	padding-top: 9.5%;
 	font-size: 9vh;
 }
 #slide-1 h2 {
@@ -89,7 +89,7 @@ body {
 
 
 #home-row-1{
-	padding-top: 1vh;
+	padding-top: 1%;
 }
 #home-row-1 h1 {
 	font-size: 20vh;

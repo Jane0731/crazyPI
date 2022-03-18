@@ -14,12 +14,11 @@
   <body>
     <div class="slide story" id="slide-1" data-slide="1">
         <nav class="navbar" id="nav1">
-            <div class="m-auto" style="font-size: 4vh;color: #3a3f45;">CrazyPi即時觀測站</div>
+            <div class="m-auto" style="font-size: 4vh;color: #3a3f45;">CrazyPi 即時觀測站</div>
           </nav>
     <div class="container-fluid">
-       
         <!-- <div class="row" style="font-size: 4vh;margin: 0 auto;"></div> -->
-        <div id="home-row-1 " class=" row clearfix" >
+        <div id="home-row-1 " class=" row clearfix" style="padding-bottom: 5%;">
             <div class="col-6" >
                 <div class="home-hover navigation-slide" data-slide="4">
                 <h1 class="font-semibold"> <i class="bi bi-thermometer-high" id="temperature"></i></h1>
@@ -35,11 +34,11 @@
             </div>
                 
             </div>
-            <br>   <br>
+            
           </div>
         </div>
        
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid bg-dark" style="padding: 1% 2%;">
           <div class="row ">
             <div class="col-6"><canvas id="teChart"></canvas></div>
             <div class="col-6"><canvas id="huChart"></canvas></div>
@@ -75,9 +74,10 @@
           labels: ['','','','',''],
           datasets: [{
               label: "溫度",
-              backgroundColor: "rgb(255, 99, 132)",
-              borderColor: "rgb(255, 99, 132)",
+              borderColor: 'rgb(75, 192, 192)',
+              color: "white",
               data: [0,0,0,0,0],
+              tension: 0.1
           }]
         },
         options: {
@@ -85,10 +85,12 @@
           plugins: {
             legend: {
               position: "top",
+              color: "white",
             },
             title: {
               display: true,
               text: "溫度表",
+              color: "white",
             },
           },
         },
@@ -102,9 +104,27 @@
           labels: ['','','','',''],
           datasets: [{
               label: "濕度",
-              backgroundColor: "rgb(0,191,255)",
-              borderColor: "rgb(0,191,255)",
+              color: "white",
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 205, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(201, 203, 207, 0.2)'
+    ],
+                borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)',
+                'rgb(153, 102, 255)',
+                'rgb(201, 203, 207)'
+              ],
               data: [0,0,0,0,0],
+              borderWidth: 1
           }]
         },
         options: {
@@ -112,10 +132,12 @@
           plugins: {
             legend: {
               position: "top",
+              color: "white",
             },
             title: {
               display: true,
               text: "濕度表",
+              color: "white",
             },
           },
         },
