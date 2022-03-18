@@ -1,6 +1,7 @@
-# CRAZYPI
+# [CRAZYPI](https://33f3-211-72-239-241.ngrok.io/)
 ## Web Folder
-
+1. 本地端安裝Django，可參考此篇文章[架設 Django 開發環境](https://developer.mozilla.org/zh-TW/docs/Learn/Server-side/Django/development_environment)
+2. 
 ## Mqtt Folder
 ### 負責功能?
 - 與MQTT Server做連線
@@ -25,3 +26,5 @@ Python mqtt.py
 cd RaspberryPi
 Python temp.py
 ```
+### RaspberryPi 漂亮的雜誌封面圖
+![RaspberryPi](/RaspberryPi.jpg)
