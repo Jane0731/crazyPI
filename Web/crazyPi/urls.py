@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
 from ht.resources import ht_resource
 from ht import views
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #api
-    path('api/', include(ht_resource.urls), name='api'),
+    path('api/', include(ht_resource.urls)),
     # 頁面
-    path('', views.home, name='home'),
-]
+    path('', views.home),
+]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

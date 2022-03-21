@@ -1,0 +1,104 @@
+#nav1
+{  
+    background-color:rgba(253, 253, 253, 0.109); /*whichever you want*/
+	font-family: "Titillium Web", sans-serif;
+}
+
+
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-semibold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+* {
+	position: relative;
+}
+
+.breaker {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #565f6a;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+.justify-text {
+	text-align: justify;
+}
+
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.slide {
+	background-position: center center;
+	background-repeat: no-repeat;
+	/* padding-bottom: 65px;
+	padding-top: 50px; */
+	text-align: center;
+}
+
+#slide-1 {
+	background-image: url('../images/bg1.jpg');
+	color: #ffffff;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	background-attachment: relative;
+	background-position: center center;
+	
+}
+
+#slide-1 h1 {
+	padding-top: 10vh;
+	font-size: 9vh;
+}
+#slide-1 h2 {
+	font-size: 7vh;
+}
+
+
+#home-row-1{
+	padding-top: 2vh;
+}
+#home-row-1 h1 {
+	font-size: 20vh;
+}
+	
+#home-row-1 h4 {
+	font-size: 32px;
+}
+	
+	
+
+
