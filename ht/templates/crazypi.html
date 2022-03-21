@@ -18,14 +18,15 @@
           </nav>
     <div class="container-fluid">
         <!-- <div class="row" style="font-size: 4vh;margin: 0 auto;"></div> -->
-        <form>
+        <form  method="post">
+          {% csrf_token %}
           <div class="form-group" style="padding-top:20vh ;">
             <div class="row">
               <div class="col-8 offset-2">
                 <div class="input-group mb-3 ">
-                  <input type="text" class="form-control" placeholder="English only" aria-label="Input" aria-describedby="button">
+                  <input type="text" class="form-control" placeholder="English only" aria-label="Input" aria-describedby="button" name="display">
                   <div class="input-group-append">
-                    <button type="button" class="btn btn btn-info"  id="button">搜尋</button>
+                    <button type="submit" class="btn btn btn-info"  id="button">搜尋</button>
                   </div>
                 </div>
             </div>
@@ -51,10 +52,10 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid bg-dark" style="padding: 1% 2%; height:70vh;">
+        <div class="container-fluid bg-dark" style="padding: 1% 2%; height:60vh;">
           <div class="row">
-            <div class="col-6"><canvas id="teChart" style="height:50vh;"></canvas></div>
-            <div class="col-6"><canvas id="huChart" style="height:50vh;"></canvas></div>
+            <div class="col-6" style="height: 90vh;position: relative;"><canvas id="teChart"></canvas></div>
+            <div class="col-6"><canvas id="huChart" style="position: relative; height:50vh"></canvas></div>
           </div>
         </div>
             </div>
