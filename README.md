@@ -8,7 +8,7 @@
 ![RaspberryPi](/RaspberryPi.jpg)
 
 ## Web Folder
-使用django架站~  
+使用django架站  
 
 ### 負責功能?
 - 提供 API 給 jQuery.ajax 定時爬取資料庫資料
